@@ -1,0 +1,3 @@
+from StartServerUI import *
+
+RunServer()
