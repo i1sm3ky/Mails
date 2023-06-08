@@ -26,4 +26,4 @@ Thank you for your understanding and patience as I work on improving the project
 
 Screenshot of the main UI:
 
-![Preview of the main UI](https://github.com/i1sm3ky/Mails/Preview%20Images/MainUI.png "Screenshot of central UI of the app")
+![Preview of the main UI](https://github.com/i1sm3ky/Mails/blob/main/Preview%20Images/MainUI.png "Screenshot of central UI of the app")
