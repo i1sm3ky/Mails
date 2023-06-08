@@ -1,0 +1,1158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EmailBaseWidget</class>
+ <widget class="QWidget" name="EmailBaseWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#EmailBaseWidget {
+	background: rgba(0, 0, 0, 0);
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,7">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="OptionListLayout">
+     <item>
+      <widget class="QFrame" name="OptionListBackgroundFrame">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame#OptionListBackgroundFrame {
+	background: #cccccc;
+	border-top-left-radius: 20;
+	border-bottom-left-radius: 20;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,1,4">
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QFrame" name="LoggedInAsFrame">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QFrame" name="WindowIconsFrame">
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QPushButton" name="CloseWindowButton">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton#CloseWindowButton {
+	background: rgba(0, 0, 0, 0);
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="../Email Services/Images/Resource.qrc">
+                  <normaloff>:/WindowIcons/SVGs/WindowIcons/CloseWindowIcon.png</normaloff>:/WindowIcons/SVGs/WindowIcons/CloseWindowIcon.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>16</width>
+                  <height>16</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="MinimiseWindowButton">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton#MinimiseWindowButton {
+	background: rgba(0, 0, 0, 0);
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="../Email Services/Images/Resource.qrc">
+                  <normaloff>:/WindowIcons/SVGs/WindowIcons/MinimiseWindowIcon.png</normaloff>:/WindowIcons/SVGs/WindowIcons/MinimiseWindowIcon.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>16</width>
+                  <height>16</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="MaximiseWindowButton">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton#MaximiseWindowButton {
+	background: rgba(0, 0, 0, 0);
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="../Email Services/Images/Resource.qrc">
+                  <normaloff>:/WindowIcons/SVGs/WindowIcons/MaximiseWindowIcon.png</normaloff>:/WindowIcons/SVGs/WindowIcons/MaximiseWindowIcon.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="__Spacer__4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="LoggedInAsLabel">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame#LoggedInAsLabel {
+	color: #7f7f7f;
+	padding-left: 7;
+}</string>
+             </property>
+             <property name="text">
+              <string>Logged in as:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="LoggedInAsFrame_">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <property name="spacing">
+               <number>7</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QPushButton" name="LoggedInAsProfilePic">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton#LoggedInAsProfilePic {
+	background: rgba(0, 0, 0, 0);
+	text-align: right;
+	padding-bottom: 6;
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>32</width>
+                  <height>32</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="_LoggedInAsFrame">
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="LoggedInAsName">
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton#LoggedInAsName {
+	background: rgba(0, 0, 0, 0);
+	color: #393939;
+	text-align: left;
+	padding-bottom: 4;
+}
+
+QPushButton#LoggedInAsName:hover {
+	color: #1884ff;
+}
+
+QPushButton#LoggedInAsName:pressed {
+	color: #004cff;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="LoggedInAsEmail">
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton#LoggedInAsEmail {
+	background: rgba(0, 0, 0, 0);
+	color: #7f7f7f;
+	text-align: left;
+}
+
+QPushButton#LoggedInAsEmail:hover {
+	color: #1884ff;
+}
+
+QPushButton#LoggedInAsEmail:pressed {
+	color: #004cff;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="NewMailButtonFrame">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="NewMailButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton#NewMailButton {
+	background: #0077ff;
+	color: #FFFFFF;
+	border: 1px solid #0077ff;
+	border-radius: 7;
+}
+
+QPushButton#NewMailButton:hover {
+	background: #1884ff;
+	border: 1px solid #1884ff;
+}
+
+QPushButton#NewMailButton:pressed {
+	background: #65adff;
+	border: 1px solid #65adff;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>New Mail</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="OptionListFrame">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QGridLayout" name="OptionListLayout_" columnstretch="0,0,0,0">
+             <item row="1" column="2">
+              <widget class="QPushButton" name="InboxMailCount">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton#InboxMailCount {
+	background: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-radius: 8;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <spacer name="__Spacer__6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="3" column="1">
+              <widget class="QPushButton" name="StarredMailButton">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton#StarredMailButton {
+	background: rgba(0, 0, 0, 0);
+	color: #a6a6a6;
+	padding-left: 5;
+	padding-bottom: 7;
+}
+
+QPushButton#StarredMailButton:hover {
+	color: #7f7f7f;
+}
+
+QPushButton#StarredMailButton:pressed {
+	color: #393939;
+}</string>
+               </property>
+               <property name="text">
+                <string>Starred</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../Email Services/Images/Resource.qrc">
+                 <normaloff>:/Disabled Icons/SVGs/Disabled/StarredMailicon.png</normaloff>:/Disabled Icons/SVGs/Disabled/StarredMailicon.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>36</width>
+                 <height>36</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <spacer name="__Spacer__8">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="11" column="1">
+              <widget class="QPushButton" name="SettingsButton">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton#SettingsButton {
+	background: rgba(0, 0, 0, 0);
+	color: #a6a6a6;
+	padding-left: 11;
+	padding-top: 7;
+	padding-bottom: 12;
+}
+
+QPushButton#SettingsButton:hover {
+	color: #7f7f7f;
+}
+
+QPushButton#SettingsButton:pressed {
+	color: #393939;
+}</string>
+               </property>
+               <property name="text">
+                <string>  Settings</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../Email Services/Images/Resource.qrc">
+                 <normaloff>:/Disabled Icons/SVGs/Disabled/SettingsIcon.png</normaloff>:/Disabled Icons/SVGs/Disabled/SettingsIcon.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="1">
+              <widget class="QPushButton" name="TrashMailButton">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton#TrashMailButton {
+	background: rgba(0, 0, 0, 0);
+	color: #a6a6a6;
+	padding-right: 8;
+	padding-top: 8;
+	padding-bottom: 10;
+}
+
+QPushButton#TrashMailButton:hover {
+	color: #7f7f7f;
+}
+
+QPushButton#TrashMailButton:pressed {
+	color: #393939;
+}</string>
+               </property>
+               <property name="text">
+                <string>  Trash</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../Email Services/Images/Resource.qrc">
+                 <normaloff>:/Disabled Icons/SVGs/Disabled/TrashIcon.png</normaloff>:/Disabled Icons/SVGs/Disabled/TrashIcon.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="2">
+              <widget class="QPushButton" name="DraftsMailCount">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton#DraftsMailCount {
+	background: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-radius: 8;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <spacer name="__Spacer__12">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="1">
+              <widget class="QPushButton" name="InboxMailButton">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton#InboxMailButton {
+	background: rgba(0, 0, 0, 0);
+	color: #a6a6a6;
+	padding-right: 5;
+	padding-top: 2;
+	padding-bottom: 7;
+}
+
+QPushButton#InboxMailButton:hover {
+	color: #7f7f7f;
+}
+
+QPushButton#InboxMailButton:pressed {
+	color: #393939;
+}</string>
+               </property>
+               <property name="text">
+                <string>  Inbox</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../Email Services/Images/Resource.qrc">
+                 <normaloff>:/Disabled Icons/SVGs/Disabled/InboxIcon.png</normaloff>:/Disabled Icons/SVGs/Disabled/InboxIcon.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QPushButton" name="SentMailButton">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton#SentMailButton {
+	background: rgba(0, 0, 0, 0);
+	color: #a6a6a6;
+	padding-right: 9;
+	padding-top: 1;
+	padding-bottom: 7;
+}
+
+QPushButton#SentMailButton:hover {
+	color: #7f7f7f;
+}
+
+QPushButton#SentMailButton:pressed {
+	color: #393939;
+}</string>
+               </property>
+               <property name="text">
+                <string>  Sent</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../Email Services/Images/Resource.qrc">
+                 <normaloff>:/Disabled Icons/SVGs/Disabled/SentIcon.png</normaloff>:/Disabled Icons/SVGs/Disabled/SentIcon.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="1">
+              <widget class="QPushButton" name="DraftsMailButton">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton#DraftsMailButton {
+	background: rgba(0, 0, 0, 0);
+	color: #a6a6a6;
+	padding-top: 8;
+	padding-bottom: 12;
+}
+
+QPushButton#DraftsMailButton:hover {
+	color: #7f7f7f;
+}
+
+QPushButton#DraftsMailButton:pressed {
+	color: #393939;
+}</string>
+               </property>
+               <property name="text">
+                <string>  Drafts</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../Email Services/Images/Resource.qrc">
+                 <normaloff>:/Disabled Icons/SVGs/Disabled/DraftIcon.png</normaloff>:/Disabled Icons/SVGs/Disabled/DraftIcon.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3">
+              <spacer name="__Spacer__5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="11" column="2">
+              <widget class="QPushButton" name="SettingsAlertIndicator">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton#SettingsAlertIndicator {
+	background: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-radius: 8;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="1">
+              <spacer name="__Spacer__10">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="10" column="1">
+              <spacer name="__Spacer__11">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="6" column="1">
+              <spacer name="__Spacer__9">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="2" column="1">
+              <spacer name="__Spacer__7">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="12" column="1">
+              <spacer name="__Spacer__13">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QScrollArea" name="GroupScrollArea">
+          <property name="styleSheet">
+           <string notr="true">QScrollArea#GroupScrollArea {
+	background: rgba(0, 0, 0, 0);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="GroupScrollAreaWidget">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>174</width>
+             <height>216</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QWidget#GroupScrollAreaWidget {
+	background: rgba(0, 0, 0, 0);
+}</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QFrame" name="GroupScrollFrame_">
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <spacer name="__Spacer__1">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame">
+                 <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_6">
+                  <property name="spacing">
+                   <number>-1</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QPushButton" name="AllGroupButton">
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#AllGroupButton {
+	background: rgba(0, 0, 0, 0);
+	color: #a6a6a6;
+	text-align: left;
+}
+
+QPushButton#AllGroupButton:hover {
+	color: #7f7f7f;
+}
+
+QPushButton#AllGroupButton:pressed {
+	color: #393939;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>  All</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="../Email Services/Images/Resource.qrc">
+                      <normaloff>:/Images/AllIcon.png</normaloff>:/Images/AllIcon.png</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="FamilyGroupButton">
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#FamilyGroupButton {
+	background: rgba(0, 0, 0, 0);
+	color: #a6a6a6;
+	text-align: left;
+	padding-top: 20;
+}
+
+QPushButton#FamilyGroupButton:hover {
+	color: #7f7f7f;
+}
+
+QPushButton#FamilyGroupButton:pressed {
+	color: #393939;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>  Family</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="../Email Services/Images/Resource.qrc">
+                      <normaloff>:/Images/Family.png</normaloff>:/Images/Family.png</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="FriendsGroupButton">
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#FriendsGroupButton {
+	background: rgba(0, 0, 0, 0);
+	color: #a6a6a6;
+	text-align: left;
+	padding-top: 20;
+}
+
+QPushButton#FriendsGroupButton:hover {
+	color: #7f7f7f;
+}
+
+QPushButton#FriendsGroupButton:pressed {
+	color: #393939;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>  Work</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="../Email Services/Images/Resource.qrc">
+                      <normaloff>:/Images/Work.png</normaloff>:/Images/Work.png</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="ClientsGroupButton">
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#ClientsGroupButton {
+	background: rgba(0, 0, 0, 0);
+	color: #a6a6a6;
+	text-align: left;
+	padding-top: 20;
+}
+
+QPushButton#ClientsGroupButton:hover {
+	color: #7f7f7f;
+}
+
+QPushButton#ClientsGroupButton:pressed {
+	color: #393939;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>  Clients</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="../Email Services/Images/Resource.qrc">
+                      <normaloff>:/Images/Client.png</normaloff>:/Images/Client.png</iconset>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <spacer name="__Spacer__2">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <spacer name="__Spacer__3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="EmailMainBodyLayout"/>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../Email Services/Images/Resource.qrc"/>
+  <include location="Images/Resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

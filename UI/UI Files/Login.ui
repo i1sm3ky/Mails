@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginWidget</class>
+ <widget class="QWidget" name="LoginWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#LoginWidget {
+	background: #FFFFFF;
+}</string>
+  </property>
+  <widget class="QLabel" name="WelcomeBackLabel">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>100</y>
+     <width>401</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>28</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#WelcomeBackLabel {
+	color: #393939;
+}</string>
+   </property>
+   <property name="text">
+    <string>Welcome back!</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LoginDetailLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>140</y>
+     <width>401</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#LoginDetailLabel {
+	color: #7f7f7f;
+}</string>
+   </property>
+   <property name="text">
+    <string>Enter your Email or Phone Number and Password to Log in</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="LoginEmailPhoneNumberInput">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>230</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit#LoginEmailPhoneNumberInput {
+	border: 1px solid #a6a6a6;
+	border-radius: 13;
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>  Email or Phone Number</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="LoginPasswordInput">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>280</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit#LoginPasswordInput {
+	border: 1px solid #a6a6a6;
+	border-radius: 13;
+}</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>  Password</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="LoginButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>350</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#LoginButton {
+	background: #0077ff;
+	color: #FFFFFF;
+	border: 1px solid #0077ff;
+	border-radius: 10;
+}
+
+QPushButton#LoginButton:hover {
+	background: #1884ff;
+	border: 1px solid #1884ff;
+}
+
+QPushButton#LoginButton:pressed {
+	background: #65adff;
+	border: 1px solid #65adff;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Log in</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ForgotPasswordButton">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>310</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#ForgotPasswordButton {
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	color: #1884ff;
+	text-align: left;
+	padding-top: 5;
+}
+
+QPushButton#ForgotPasswordButton:hover {
+	color: #419aff;
+}
+
+QPushButton#ForgotPasswordButton:pressed {
+	color: #004cff;
+}</string>
+   </property>
+   <property name="text">
+    <string>Forgot Pasword?</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="CreateAccountFrame">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>499</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <spacer name="__Spacer__51">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="CreateAccountLabel">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Don't have an account?</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="SignupButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton#SignupButton {
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	color: #1884ff;
+	padding-left: 5;
+	text-align: left;
+}
+
+QPushButton#SignupButton:hover {
+	color: #419aff;
+}
+
+QPushButton#SignupButton:pressed {
+	color: #004cff;
+}</string>
+      </property>
+      <property name="text">
+       <string>Create an account</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="__Spacer__50">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

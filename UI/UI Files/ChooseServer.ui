@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChooseServerWidget</class>
+ <widget class="QWidget" name="ChooseServerWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#ChooseServerWidget {
+	background: #FFFFFF;
+}</string>
+  </property>
+  <widget class="QLabel" name="ChooseServerLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>401</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>18</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#ChooseServerLabel {
+	color: #393939;
+}</string>
+   </property>
+   <property name="text">
+    <string>Choose a Server to connect</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="ChooseServerScrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>139</y>
+     <width>401</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QScrollArea#ChooseServerScrollArea {
+	background: #FFFFFF;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="ChooseServerScrollAreaWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>401</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#ChooseServerScrollAreaWidget {
+	background: #FFFFFF;
+}</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="RefreshChooserServerButton">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>100</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#RefreshChooserServerButton {
+	background: rgba(0, 0, 0, 0);
+	border: 1px solid #1884ff;
+	border-radius: 10;
+	color: #1884ff;
+}
+
+QPushButton#RefreshChooserServerButton:hover {
+	color: #419aff;
+	border: 1px solid #419aff;
+	border-radius: 10;
+}
+
+QPushButton#RefreshChooserServerButton:pressed {
+	color: #004cff;
+	border: 1px solid #004cff;
+	border-radius: 10;
+}</string>
+   </property>
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

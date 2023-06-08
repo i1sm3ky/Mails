@@ -1,0 +1,52 @@
+<RCC>
+  <qresource prefix="Icons">
+    <file>SVGs/EditIcon.png</file>
+    <file>SVGs/FileIcons/PaperClipIcon.png</file>
+    <file>SVGs/FavouriteMailicon.png</file>
+    <file>SVGs/DeleteMailIcon.png</file>
+    <file>SVGs/ForwardMailIcon.png</file>
+    <file>SVGs/ReplyMailIcon.png</file>
+    <file>SVGs/MagnifyingGlass.png</file>
+  </qresource>
+  <qresource prefix="Settings">
+    <file>SVGs/SettingsIcons/Account(Activated).png</file>
+    <file>SVGs/SettingsIcons/Account(Deactivated).png</file>
+    <file>SVGs/SettingsIcons/Personalization(Activated).png</file>
+    <file>SVGs/SettingsIcons/Personalization(Deactivacted).png</file>
+    <file>SVGs/SettingsIcons/Security(Activated).png</file>
+    <file>SVGs/SettingsIcons/Security(Deactivated).png</file>
+  </qresource>
+  <qresource prefix="File Icons">
+    <file>SVGs/FileIcons/DOCXIcon.png</file>
+    <file>SVGs/FileIcons/GIFIcon.png</file>
+    <file>SVGs/FileIcons/JPGIcon.png</file>
+    <file>SVGs/FileIcons/MP3Icon.png</file>
+    <file>SVGs/FileIcons/PaperClipIcon.png</file>
+    <file>SVGs/FileIcons/PDFIcon.png</file>
+    <file>SVGs/FileIcons/PNGIcon.png</file>
+    <file>SVGs/FileIcons/PPTIcon.png</file>
+    <file>SVGs/FileIcons/TXTIcon.png</file>
+    <file>SVGs/FileIcons/VideoIcon.png</file>
+    <file>SVGs/FileIcons/XLSIcon.png</file>
+    <file>SVGs/FileIcons/ZIPIcon.png</file>
+  </qresource>
+  <qresource prefix="Disabled Icons">
+    <file>SVGs/Disabled/SentIcon.png</file>
+    <file>SVGs/Disabled/SettingsIcon.png</file>
+    <file>SVGs/Disabled/TrashIcon.png</file>
+    <file>SVGs/Disabled/DraftIcon.png</file>
+    <file>SVGs/Disabled/StarredMailicon.png</file>
+    <file>SVGs/Disabled/InboxIcon.png</file>
+  </qresource>
+  <qresource prefix="Images">
+    <file>Client.png</file>
+    <file>Family.png</file>
+    <file>Work.png</file>
+    <file>AllIcon.png</file>
+  </qresource>
+  <qresource prefix="WindowIcons">
+    <file>SVGs/WindowIcons/CloseWindowIcon.png</file>
+    <file>SVGs/WindowIcons/MaximiseWindowIcon.png</file>
+    <file>SVGs/WindowIcons/MinimiseWindowIcon.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SignupConfirmationWidget</class>
+ <widget class="QWidget" name="SignupConfirmationWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#SignupConfirmationWidget {
+	background: #FFFFFF;
+}</string>
+  </property>
+  <widget class="QLineEdit" name="SignupAnswerInput">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>260</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit#SignupAnswerInput {
+	border: 1px solid #a6a6a6;
+	border-radius: 13;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>  Answer</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SignupConfirmationDetailLabel1">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>110</y>
+     <width>401</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#SignupConfirmationDetailLabel1 {
+	color: #7f7f7f;
+}</string>
+   </property>
+   <property name="text">
+    <string>Set a Security question and password for when you forgot</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="SignupQuestionInput">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>220</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit#SignupQuestionInput {
+	border: 1px solid #a6a6a6;
+	border-radius: 13;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>  Enter a question</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SignupConfirmationLabel">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>70</y>
+     <width>401</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>28</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#SignupConfirmationLabel {
+	color: #393939;
+}</string>
+   </property>
+   <property name="text">
+    <string>Just one more minute</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CreateAccountButton">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>380</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#CreateAccountButton {
+	background: #0077ff;
+	color: #FFFFFF;
+	border: 1px solid #0077ff;
+	border-radius: 10;
+}
+
+QPushButton#CreateAccountButton:hover {
+	background: #1884ff;
+	border: 1px solid #1884ff;
+}
+
+QPushButton#CreateAccountButton:pressed {
+	background: #65adff;
+	border: 1px solid #65adff;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Create Account</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SignupConfirmationDetailLabel2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>119</y>
+     <width>401</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#SignupConfirmationDetailLabel2 {
+	color: #7f7f7f;
+}</string>
+   </property>
+   <property name="text">
+    <string>your password</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
